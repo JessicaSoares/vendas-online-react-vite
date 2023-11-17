@@ -1,11 +1,9 @@
-import react from '@vitejs/plugin-react-swc'
-import path from 'path'
-import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc';
+import path from 'path';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  plugins: [
-    react(),
-  ],
+  plugins: [react()],
   resolve: {
     alias: {
       '@/components': path.resolve(__dirname, 'src/components'),
@@ -19,6 +17,6 @@ export default defineConfig({
       '@/requests': path.resolve(__dirname, 'src/requests'),
       '@/types': path.resolve(__dirname, 'src/@types'),
       '@/redux': path.resolve(__dirname, 'src/redux'),
-    }
+    },
   },
-})
+});
